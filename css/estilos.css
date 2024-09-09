@@ -1,0 +1,143 @@
+body{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.Inicio{
+    background:url(/imagenes/Fondo.jpg)
+}
+
+a{
+    text-decoration: none;
+    color: #D8F3DC;
+}
+
+header{
+    display: flex;
+    min-height: 75px;
+    background-color: #95D5B2;
+    color: #081C15;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    color: #033d22;
+}
+
+.logo-img{
+    height: 50px;
+    margin-right: 10px;
+}
+
+.Navegacion li{
+    display: flex;
+    padding: 10px;
+}
+
+.Navegacion ul{
+    display: flex;
+    list-style: none;
+    padding-right: 10px;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+.AbrirMenu{
+    display: none;
+}
+
+.card{
+    margin-bottom: 20px;
+    width: 18rem;
+    height: 30rem;
+    border-radius: 10px;
+    background-color: #B7E4C7;
+}
+
+.Contenedor{
+    width: 90%;
+    max-width: 1400px;
+    margin: auto;
+    display: grid;
+}
+
+.ContenedorCatalogo{
+    background-color: #D8F3DC;
+    display: grid;
+    grid-template-columns: repeat(4);
+    gap: 10px;
+    padding: 20px;
+    padding-right: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.slide{
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+.slide img{
+    height: 600px;
+    width: 50%;
+    padding: 0px 80px 10px 80px;
+}
+
+.ContenedorSolicitud{
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    padding: 20%;
+    align-content: center;
+}
+
+.form-content{
+    width: 100%;
+    background-color: #D8F3DC;
+    padding: 50px 20px 50px;
+    border-radius: 25px;
+    padding-bottom: 20px;
+}
+
+.main{
+    width: 100%;
+    height: calc(100vh - 200px);
+}
+
+.footer{
+    background-color: #081C15;
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    color: white;
+    margin: 0;
+    padding-top: 15px;
+}
+
+.Boton{
+    margin-bottom: 20px;
+    display: grid;
+    width: 100%;
+    justify-content: center;
+}
+
+.BotonCatalogo{
+    border-radius: 5px;
+    width: 300px;
+    background-color: #033d22;
+    color: white;
+    padding:2%;
+    margin: auto;
+}
+
+@media screen and (max-width:700px){
+  header{
+    flex-direction: column;
+  }
+}
